@@ -189,8 +189,8 @@ def main(encrypt, decrypt):
     """
 
     if encrypt:
-        # Encrypt data and erase source file contents after successful
-        # encryption
+        # Encrypt data and keep source file contents after encryption
+        # To erase file contents: set `post_encryption_erase` to `True`
         encrypt_file(
             read_from="plaintext.txt",
             write_to="encrypted.txt",
